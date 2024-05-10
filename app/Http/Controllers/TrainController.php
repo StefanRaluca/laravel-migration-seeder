@@ -14,6 +14,14 @@ class TrainController extends Controller
         $now = Carbon::now();
 
         $trains = Train::whereDate('departure_time', $now)->get();
+        //$trains = Train::class;
         return view('home', compact('trains'));
     }
+
+    public function otherTrains()
+    {
+        $otherTrains = Train::all();
+        return view('others', compact('otherTrains'));
+    }
+
 }
