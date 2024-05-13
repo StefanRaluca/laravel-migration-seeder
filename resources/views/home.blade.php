@@ -6,13 +6,13 @@
                 <ul class="list-group">
                     @foreach ($trains as $train)
                         <li class="list-group-item">
-                            <h3>{{ $train->Train_Code }}</h3>
-                            <p> {{ $train->Company }}</p>
-                            <p>{{ $train->Departure_station }}</p>
-                            <p> {{ $train->Arrival_station }}</p>
-                            <p>{{ $train->Departure_time }}</p>
-                            <p>{{ $train->Arrival_time }}</p>
-                            <p>{{ $train->Carriages_number }}</p>
+                            <h3>{{ $train->train_Code }}</h3>
+                            <p> {{ $train->company }}</p>
+                            <p>{{ $train->departure_station }}</p>
+                            <p> {{ $train->arrival_station }}</p>
+                            <p>{{ $train->departure_time }}</p>
+                            <p>{{ $train->arrival_time }}</p>
+                            <p>{{ $train->carriages_number }}</p>
                         </li>
                     @endforeach
                 </ul>
